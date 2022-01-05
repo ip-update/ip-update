@@ -14,10 +14,10 @@ What if sites start show warnings for missing IPv6 support?
 </p>
 With inspiration from <a href="http://browser-update.org/">browser-update.org</a>, maybe something similar can be done to warn about lacking IPv6 support.
 
-<h1>The banner</h1>
-This is work in progress...,
-you should be able to get a small script to put on your webpage
-that informs visitors about lacking IPv6 support.
+<h1>The banner/popup</h1>
+Include the small <code>&lt;script async src="https://ip-update.net/ipupdate.js"&gt;&lt;/script&gt;</code>
+on your webpage and visitors without IPv6 will get a notification linking here.
+<img src="/static/img/screenshot.png" alt="screenshot"/>
 
 <h1 id="NoIPv6">Missing IPv6 support</h1>
 You might have come here due to a connection test over IPv6 failing.
@@ -41,3 +41,5 @@ This is an issue because some sites are IPv6 only and might not be reached over 
 The ip-update.net logo is based on the logo from <a href="https://www.worldipv6launch.org/downloads/">worldipv6launch.org</a>, used in accordance with <a href="https://creativecommons.org/licenses/by/3.0/">CC 3.0 license</a><div class=""></div>
 Inspiration from <a href="http://browser-update.org/">browser-update.org</a>.
 Tests using <a href="https://www.ipify.org/">ipify.org</a> IPv6-address API.
+
+<script async src="/ipupdate.js"></script>

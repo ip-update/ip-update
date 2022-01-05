@@ -1,2 +1,18 @@
+theme: minima
+
+# social links 2.5
+twitter_username: ipv6update
+github_username: ip-update
+
+minima:
+  date_format: "%Y-%m-%d %H:%M"
+  # 3.0
+  social_links:
+    twitter: ipv6update
+    github: ip-update
+
+title: ip-update.net
+google_analytics: G-PW8M6H5CJ2
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag

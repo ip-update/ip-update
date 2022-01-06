@@ -13,7 +13,8 @@ var $ipuo_check = function () {
   border: 2px solid rgba(0, 191, 56, 0.7);
   border-radius: 5px;
   max-width: 30%;
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   top: 2em;
   right: 2em;
   transition: all 250ms ease-in-out;

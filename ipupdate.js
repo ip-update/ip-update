@@ -50,6 +50,13 @@ var $ipuo_check = function () {
     color: #888;
   }
 }`;
+  const messages = {
+    en: 'Your internet connection does not seem to support current internet standards. Please contact your internet provider and ask them about IPv6. Read more at <a href="https://ip-update.net/#NoIPv6" target="_blank" rel="noopener">ip-update.net</a>.',
+    fr: 'Votre connexion Internet ne semble pas supporter les derniers standards d\'Internet. Merci de contacter votre fournisseur d\'accès Internet et de lui demander de supporter IPv6. Vous pouvez en lire plus à ce propos sur <a href="https://ip-update.net/#NoIPv6" target="_blank" rel="noopener">ip-update.net (en anglais)</a>.'
+  };
+  const user_lang = (navigator.language || navigator.userLanguage).split("-")[0]; // when xx-yy gets returned, uses xx.
+  const i18n_message = messages[user_lang] || messages["en"];
+
 	var t_body = document.getElementsByTagName("body")[0] || document.body;
 	var t_div = document.createElement("div");
 	t_div.id = "ipupop";
@@ -63,7 +70,7 @@ var $ipuo_check = function () {
 	t_a.onclick = () => { t_div.className = def_div_class; return false; };
 	t_a.innerHTML = "&times;";
   var t_m = document.createElement("div");
-	t_m.innerHTML = 'Your internet connection does not seem to support current internet standards. Please contact your internet provider and ask them about IPv6. Read more at <a href="https://ip-update.net/#NoIPv6" target="_blank" rel="noopener">ip-update.net</a>.';
+	t_m.innerHTML = i18n_message;
 	t_div.appendChild(t_a)
 	t_div.appendChild(t_m)
   t_div.className = ""; // actually trigger show

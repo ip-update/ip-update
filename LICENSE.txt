@@ -1,4 +1,4 @@
-Copyright (c) 2022 https://ip-update.net/
+Copyright (c) 2022-2023 https://ip-update.net/
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

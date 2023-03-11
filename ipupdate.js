@@ -1,4 +1,4 @@
-//(c)2022, MIT Style License <ip-update.net/LICENSE.txt>
+//(c)2022-2023, MIT Style License <ip-update.net/LICENSE.txt>
 // Feel free to copy, change and improve,
 // but do consider to leave your feedback and suggestions on:
 // https://github.com/ip-update/ip-update/discussions

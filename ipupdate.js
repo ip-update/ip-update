@@ -79,8 +79,7 @@ var $ipuo_check = function () {
 	var t_head = document.getElementsByTagName("head")[0] || document.body;
 	t_head.insertBefore(t_style, t_head.firstChild);
   }
-  // possible alternative API: https://jsonip.com
-  fetch('https://api6.ipify.org/?format=json', { mode: 'cors', credentials: 'omit'})
+  fetch('https://ipv6.json.myip.wtf/?origin=ip-update.net&geo=0&reverse=0', { mode: 'cors', credentials: 'omit'})
   .then(r => {
         //console.log("ipv6 response", r);
         if (!r.ok) { // this is fine
@@ -90,7 +89,7 @@ var $ipuo_check = function () {
         return r.json();
     })
   //.then(r => console.log("ipv6 data", r))
-  .catch(e => { // no connection for some reason, assume no IPv6
+  .catch(e => { // no connection for some reason, assume no IPv6, consider fallback check
     console.error("no ipv6?", e);
 	showmsg(e);
   });
